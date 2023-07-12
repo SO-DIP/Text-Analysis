@@ -3,7 +3,7 @@ Text Analysis
 
 Objective of this document is to explain methodology adopted to perform text analysis to drive sentimental opinion, sentiment scores, readability, passive words, personal pronouns and etc.
 
-##Table of Contents##
+# Table of Contents #
 
 
 1	Sentimental Analysis	2
