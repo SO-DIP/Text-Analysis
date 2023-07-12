@@ -62,37 +62,37 @@ Subjectivity Score: This is the score that determines if a given text is objecti
 Subjectivity Score = (Positive Score + Negative Score)/ ((Total Words after cleaning) + 0.000001)
 Range is from 0 to +1
 
-### 2	Analysis of Readability###
+### 2	Analysis of Readability ###
 Analysis of Readability is calculated using the Gunning Fox index formula described below.
 Average Sentence Length = the number of words / the number of sentences
 Percentage of Complex words = the number of complex words / the number of words 
 Fog Index = 0.4 * (Average Sentence Length + Percentage of Complex words)
 
 
-### 3	Average Number of Words Per Sentence###
+### 3	Average Number of Words Per Sentence ###
 The formula for calculating is:
 Average Number of Words Per Sentence = the total number of words / the total number of sentences
 
 
-### 4	Complex Word Count###
+### 4	Complex Word Count ###
 Complex words are words in the text that contain more than two syllables.
 
 
-### 5	Word Count###
+### 5	Word Count ###
 We count the total cleaned words present in the text by 
 1.	removing the stop words (using stopwords class of nltk package).
 2.	removing any punctuations like ? ! , . from the word before counting.
    
 
-### 6	Syllable Count Per Word###
+### 6	Syllable Count Per Word ###
 We count the number of Syllables in each word of the text by counting the vowels present in each word. We also handle some exceptions like words ending with "es","ed" by not counting them as a syllable.
 
 
-### 7	Personal Pronouns###
+### 7	Personal Pronouns ###
 To calculate Personal Pronouns mentioned in the text, we use regex to find the counts of the words - “I,” “we,” “my,” “ours,” and “us”. Special care is taken so that the country name US is not included in the list.
 
 
-### 8	Average Word Length###
+### 8	Average Word Length ###
 Average Word Length is calculated by the formula:
 Sum of the total number of characters in each word/Total number of words
 
